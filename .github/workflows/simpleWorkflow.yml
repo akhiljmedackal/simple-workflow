@@ -16,7 +16,7 @@ jobs:
       - name : name of my second step
         id: step2
         shell: python
-        run : printf("this is my second step")
+        run : print("this is my second step")
        
       
   
