@@ -3,9 +3,22 @@ name: workflow overview
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      -main
 
 
 jobs:
+  selfhostedjob:
+    name: selfhosted job 
+    runs-on: self-hosted
+    steps:
+      - name: self hosted step
+        id: selfhostedid1
+        shell: cmd
+        run: |
+          echo this is a multiline comment
+          for the sef hosted runner
   simplejob1:
     name: firstjob
     runs-on : ubuntu-latest
