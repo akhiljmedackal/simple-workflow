@@ -18,7 +18,7 @@ jobs:
         shell: cmd
         run: |
           echo this is a multiline comment
-          for the sef hosted runner
+          echo for the sef hosted runner
   simplejob1:
     name: firstjob
     runs-on : ubuntu-latest
